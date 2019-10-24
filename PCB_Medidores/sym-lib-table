@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name PI2_Library)(type Legacy)(uri /home/arthur/FGA/PI2/KiCad/Libs/PI2_Library.lib)(options "")(descr ""))
+)
