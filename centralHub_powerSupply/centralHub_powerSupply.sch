@@ -1,0 +1,215 @@
+EESchema Schematic File Version 4
+LIBS:centralHub_powerSupply-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Switching:LM2576HVS-5 U1
+U 1 1 5DB23AFA
+P 4550 4300
+F 0 "U1" H 4550 4667 50  0000 C CNN
+F 1 "LM2576HVS-5" H 4550 4576 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 4550 4050 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2576.pdf" H 4550 4300 50  0001 C CNN
+	1    4550 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5822 D2
+U 1 1 5DB255E3
+P 5350 4650
+F 0 "D2" V 5304 4729 50  0000 L CNN
+F 1 "1N5822" V 5395 4729 50  0000 L CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 5350 4475 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 5350 4650 50  0001 C CNN
+	1    5350 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode_Bridge:KBU4J D1
+U 1 1 5DB26680
+P 2700 4200
+F 0 "D1" H 3044 4246 50  0000 L CNN
+F 1 "KBU4J" H 3044 4155 50  0000 L CNN
+F 2 "Diode_THT:Diode_Bridge_Vishay_KBU" H 2850 4325 50  0001 L CNN
+F 3 "http://www.vishay.com/docs/88656/kbu4.pdf" H 2700 4200 50  0001 C CNN
+	1    2700 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4400 5350 4400
+Wire Wire Line
+	5350 4500 5350 4400
+$Comp
+L Device:CP1 C2
+U 1 1 5DB2E14A
+P 6000 4650
+F 0 "C2" H 6115 4696 50  0000 L CNN
+F 1 "1000uF" H 6115 4605 50  0000 L CNN
+F 2 "" H 6000 4650 50  0001 C CNN
+F 3 "~" H 6000 4650 50  0001 C CNN
+	1    6000 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C1
+U 1 1 5DB2F1B7
+P 3400 4350
+F 0 "C1" H 3515 4396 50  0000 L CNN
+F 1 "100uF" H 3515 4305 50  0000 L CNN
+F 2 "" H 3400 4350 50  0001 C CNN
+F 3 "~" H 3400 4350 50  0001 C CNN
+	1    3400 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4200 6000 4200
+$Comp
+L Device:L_Core_Ferrite L1
+U 1 1 5DB289B0
+P 5650 4400
+F 0 "L1" V 5469 4400 50  0000 C CNN
+F 1 "100uH" V 5560 4400 50  0000 C CNN
+F 2 "" H 5650 4400 50  0001 C CNN
+F 3 "~" H 5650 4400 50  0001 C CNN
+	1    5650 4400
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6000 4200 6000 4400
+Wire Wire Line
+	5500 4400 5350 4400
+Connection ~ 5350 4400
+Wire Wire Line
+	5800 4400 6000 4400
+Connection ~ 6000 4400
+Wire Wire Line
+	6000 4400 6000 4500
+$Comp
+L power:GND #PWR07
+U 1 1 5DB3CABA
+P 6000 4800
+F 0 "#PWR07" H 6000 4550 50  0001 C CNN
+F 1 "GND" H 6005 4627 50  0000 C CNN
+F 2 "" H 6000 4800 50  0001 C CNN
+F 3 "" H 6000 4800 50  0001 C CNN
+	1    6000 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5DB3D4B8
+P 5350 4800
+F 0 "#PWR06" H 5350 4550 50  0001 C CNN
+F 1 "GND" H 5355 4627 50  0000 C CNN
+F 2 "" H 5350 4800 50  0001 C CNN
+F 3 "" H 5350 4800 50  0001 C CNN
+	1    5350 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5DB3DBB6
+P 3400 4500
+F 0 "#PWR02" H 3400 4250 50  0001 C CNN
+F 1 "GND" H 3405 4327 50  0000 C CNN
+F 2 "" H 3400 4500 50  0001 C CNN
+F 3 "" H 3400 4500 50  0001 C CNN
+	1    3400 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5DB3E07E
+P 4550 4600
+F 0 "#PWR05" H 4550 4350 50  0001 C CNN
+F 1 "GND" H 4555 4427 50  0000 C CNN
+F 2 "" H 4550 4600 50  0001 C CNN
+F 3 "" H 4550 4600 50  0001 C CNN
+	1    4550 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5DB3E809
+P 4050 4400
+F 0 "#PWR04" H 4050 4150 50  0001 C CNN
+F 1 "GND" V 4055 4272 50  0000 R CNN
+F 2 "" H 4050 4400 50  0001 C CNN
+F 3 "" H 4050 4400 50  0001 C CNN
+	1    4050 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3000 4200 3400 4200
+$Comp
+L power:GND #PWR01
+U 1 1 5DB43228
+P 2400 4200
+F 0 "#PWR01" H 2400 3950 50  0001 C CNN
+F 1 "GND" V 2405 4072 50  0000 R CNN
+F 2 "" H 2400 4200 50  0001 C CNN
+F 3 "" H 2400 4200 50  0001 C CNN
+	1    2400 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J1
+U 1 1 5DB4464D
+P 2900 4950
+F 0 "J1" H 2750 4800 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 2450 4700 50  0000 L CNN
+F 2 "" H 2900 4950 50  0001 C CNN
+F 3 "~" H 2900 4950 50  0001 C CNN
+	1    2900 4950
+	1    0    0    -1  
+$EndComp
+Text Label 2700 4500 3    50   ~ 0
+AC_in1
+Text Label 2700 3900 1    50   ~ 0
+AC_in2
+Text Label 6000 4400 0    50   ~ 0
+V5_out
+Text Label 2900 4950 0    50   ~ 0
+AC_in1
+Text Label 2900 5050 0    50   ~ 0
+AC_in2
+$Comp
+L power:GND #PWR03
+U 1 1 5DB4BFFB
+P 4050 5050
+F 0 "#PWR03" H 4050 4800 50  0001 C CNN
+F 1 "GND" V 4055 4922 50  0000 R CNN
+F 2 "" H 4050 5050 50  0001 C CNN
+F 3 "" H 4050 5050 50  0001 C CNN
+	1    4050 5050
+	0    -1   -1   0   
+$EndComp
+Text Label 4050 4950 0    50   ~ 0
+V5_out
+Connection ~ 3400 4200
+Wire Wire Line
+	3400 4200 4050 4200
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5DB38900
+P 4050 4950
+F 0 "J?" H 3900 4800 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 3600 4700 50  0000 L CNN
+F 2 "" H 4050 4950 50  0001 C CNN
+F 3 "~" H 4050 4950 50  0001 C CNN
+	1    4050 4950
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
