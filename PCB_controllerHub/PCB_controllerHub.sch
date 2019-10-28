@@ -1,0 +1,401 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Diode:1N5408 D2
+U 1 1 5DB3A091
+P 4350 1300
+F 0 "D2" H 4350 1084 50  0000 C CNN
+F 1 "1N5408" H 4350 1175 50  0000 C CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 4350 1125 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 4350 1300 50  0001 C CNN
+	1    4350 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N5408 D1
+U 1 1 5DB34EBA
+P 4100 1500
+F 0 "D1" V 4146 1421 50  0000 R CNN
+F 1 "1N5408" V 4055 1421 50  0000 R CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 4100 1325 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 4100 1500 50  0001 C CNN
+	1    4100 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N5408 D3
+U 1 1 5DB348F4
+P 4400 1700
+F 0 "D3" H 4250 1750 50  0000 C CNN
+F 1 "1N5408" H 4400 1850 50  0000 C CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 4400 1525 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 4400 1700 50  0001 C CNN
+	1    4400 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N5408 D4
+U 1 1 5DB33F78
+P 4650 1500
+F 0 "D4" V 4696 1421 50  0000 R CNN
+F 1 "1N5408" V 4605 1421 50  0000 R CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 4650 1325 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 4650 1500 50  0001 C CNN
+	1    4650 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Transformer_1P_SS T1
+U 1 1 5DB43B8F
+P 2650 2650
+F 0 "T1" H 2650 3031 50  0000 C CNN
+F 1 "Transformer_1P_SS" H 2650 2940 50  0000 C CNN
+F 2 "" H 2650 2650 50  0001 C CNN
+F 3 "~" H 2650 2650 50  0001 C CNN
+	1    2650 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 1700 4100 1700
+Wire Wire Line
+	4100 1700 4100 1650
+NoConn ~ 3050 2650
+Wire Wire Line
+	4100 1300 4100 1350
+Wire Wire Line
+	4100 1300 4200 1300
+Wire Wire Line
+	4550 1700 4650 1700
+Wire Wire Line
+	4650 1700 4650 1650
+Wire Wire Line
+	4500 1300 4650 1300
+Wire Wire Line
+	4650 1300 4650 1350
+Connection ~ 4650 1300
+Wire Wire Line
+	4100 1300 4100 1150
+Connection ~ 4100 1300
+Connection ~ 4650 1700
+NoConn ~ 2250 2450
+NoConn ~ 2250 2850
+Wire Wire Line
+	3050 2450 3150 2450
+Wire Wire Line
+	3150 2450 3150 2600
+Wire Wire Line
+	3150 2600 3200 2600
+Wire Wire Line
+	3050 2850 3150 2850
+Wire Wire Line
+	3150 2850 3150 2700
+Text GLabel 3500 2850 2    50   Input ~ 0
+AC2
+Wire Wire Line
+	3200 2600 3200 2450
+Wire Wire Line
+	3200 2450 3500 2450
+Connection ~ 3200 2600
+Wire Wire Line
+	3150 2700 3200 2700
+Wire Wire Line
+	3500 2850 3200 2850
+Wire Wire Line
+	3200 2850 3200 2700
+Connection ~ 3200 2700
+Text GLabel 4000 1300 0    50   Input ~ 0
+AC1
+Wire Wire Line
+	4000 1300 4100 1300
+Text GLabel 4550 1000 0    50   Input ~ 0
+AC2
+Wire Wire Line
+	4550 1000 4650 1000
+Wire Wire Line
+	4650 1000 4650 1300
+$Comp
+L Device:CP1_Small C1
+U 1 1 5DB95F43
+P 5150 1450
+F 0 "C1" H 5241 1496 50  0000 L CNN
+F 1 "1000uF" H 5241 1405 50  0000 L CNN
+F 2 "" H 5150 1450 50  0001 C CNN
+F 3 "~" H 5150 1450 50  0001 C CNN
+	1    5150 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5DB96D2D
+P 5600 1550
+F 0 "R1" H 5659 1596 50  0000 L CNN
+F 1 "270" H 5659 1505 50  0000 L CNN
+F 2 "" H 5600 1550 50  0001 C CNN
+F 3 "~" H 5600 1550 50  0001 C CNN
+	1    5600 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N47xxA D5
+U 1 1 5DB97237
+P 6000 1300
+F 0 "D5" V 5954 1379 50  0000 L CNN
+F 1 "1N4734A" V 6045 1379 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6000 1125 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 6000 1300 50  0001 C CNN
+	1    6000 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5150 1700 5150 1550
+Wire Wire Line
+	4650 1700 5150 1700
+Wire Wire Line
+	5150 1350 5150 1150
+Wire Wire Line
+	4100 1150 5150 1150
+$Comp
+L Device:CP1_Small C2
+U 1 1 5DBA2CD3
+P 5600 1300
+F 0 "C2" H 5691 1346 50  0000 L CNN
+F 1 "100uF" H 5691 1255 50  0000 L CNN
+F 2 "" H 5600 1300 50  0001 C CNN
+F 3 "~" H 5600 1300 50  0001 C CNN
+	1    5600 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 1400 5600 1450
+Wire Wire Line
+	5600 1650 5600 1700
+Wire Wire Line
+	5600 1700 5150 1700
+Connection ~ 5150 1700
+Wire Wire Line
+	5150 1150 5600 1150
+Wire Wire Line
+	5600 1150 5600 1200
+Connection ~ 5150 1150
+Wire Wire Line
+	5600 1150 6000 1150
+Connection ~ 5600 1150
+$Comp
+L Transistor_BJT:TIP42 Q1
+U 1 1 5DB97AD6
+P 6000 1750
+F 0 "Q1" V 6235 1750 50  0000 C CNN
+F 1 "TIP42" V 6326 1750 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6250 1675 50  0001 L CIN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=TIP42.PDF" H 6000 1750 50  0001 L CNN
+	1    6000 1750
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5800 1850 5600 1850
+Wire Wire Line
+	5600 1850 5600 1700
+Connection ~ 5600 1700
+Wire Wire Line
+	6000 1550 6000 1450
+$Comp
+L Device:R_Small R2
+U 1 1 5DBBA193
+P 6550 1500
+F 0 "R2" H 6609 1546 50  0000 L CNN
+F 1 "1k" H 6609 1455 50  0000 L CNN
+F 2 "" H 6550 1500 50  0001 C CNN
+F 3 "~" H 6550 1500 50  0001 C CNN
+	1    6550 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 1150 6550 1150
+Wire Wire Line
+	6550 1150 6550 1400
+Connection ~ 6000 1150
+Wire Wire Line
+	6550 1600 6550 1850
+Wire Wire Line
+	6550 1850 6200 1850
+Wire Wire Line
+	6550 1150 6900 1150
+Wire Wire Line
+	6900 1150 6900 1400
+Connection ~ 6550 1150
+Wire Wire Line
+	6900 1600 6900 1850
+Wire Wire Line
+	6900 1850 6550 1850
+Connection ~ 6550 1850
+$Comp
+L Device:C_Small C3
+U 1 1 5DBBE624
+P 6900 1500
+F 0 "C3" H 6992 1546 50  0000 L CNN
+F 1 "100nF" H 6992 1455 50  0000 L CNN
+F 2 "" H 6900 1500 50  0001 C CNN
+F 3 "~" H 6900 1500 50  0001 C CNN
+	1    6900 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR05
+U 1 1 5DBBFE89
+P 7100 1150
+F 0 "#PWR05" H 7100 1000 50  0001 C CNN
+F 1 "+5V" V 7115 1278 50  0000 L CNN
+F 2 "" H 7100 1150 50  0001 C CNN
+F 3 "" H 7100 1150 50  0001 C CNN
+	1    7100 1150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6900 1150 7100 1150
+Connection ~ 6900 1150
+$Comp
+L power:GND #PWR06
+U 1 1 5DBC0ECE
+P 7150 1900
+F 0 "#PWR06" H 7150 1650 50  0001 C CNN
+F 1 "GND" H 7155 1727 50  0000 C CNN
+F 2 "" H 7150 1900 50  0001 C CNN
+F 3 "" H 7150 1900 50  0001 C CNN
+	1    7150 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 1850 7150 1850
+Wire Wire Line
+	7150 1850 7150 1900
+Connection ~ 6900 1850
+$Comp
+L PI2_Library:Module_Relay U1
+U 1 1 5DBC8D34
+P 7300 2250
+F 0 "U1" H 7478 1896 50  0000 L CNN
+F 1 "Module_Relay" H 7478 1805 50  0000 L CNN
+F 2 "" H 7300 2250 50  0001 C CNN
+F 3 "" H 7300 2250 50  0001 C CNN
+	1    7300 2250
+	1    0    0    -1  
+$EndComp
+Text GLabel 5350 3200 0    50   Input ~ 0
+Chanel1
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 5DBF98DD
+P 3550 2600
+F 0 "J3" H 3630 2592 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 3630 2501 50  0000 L CNN
+F 2 "" H 3550 2600 50  0001 C CNN
+F 3 "~" H 3550 2600 50  0001 C CNN
+	1    3550 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 2600 3350 2600
+Wire Wire Line
+	3200 2700 3350 2700
+$Comp
+L Connector:Conn_01x04_Female J1
+U 1 1 5DC0506C
+P 5950 3200
+F 0 "J1" H 5978 3176 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 5978 3085 50  0000 L CNN
+F 2 "" H 5950 3200 50  0001 C CNN
+F 3 "~" H 5950 3200 50  0001 C CNN
+	1    5950 3200
+	1    0    0    -1  
+$EndComp
+Text GLabel 5350 3300 0    50   Input ~ 0
+Chanel2
+$Comp
+L power:+5V #PWR02
+U 1 1 5DC6B004
+P 5300 3400
+F 0 "#PWR02" H 5300 3250 50  0001 C CNN
+F 1 "+5V" V 5315 3528 50  0000 L CNN
+F 2 "" H 5300 3400 50  0001 C CNN
+F 3 "" H 5300 3400 50  0001 C CNN
+	1    5300 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5DC6E264
+P 5300 3100
+F 0 "#PWR01" H 5300 2850 50  0001 C CNN
+F 1 "GND" V 5305 2972 50  0000 R CNN
+F 2 "" H 5300 3100 50  0001 C CNN
+F 3 "" H 5300 3100 50  0001 C CNN
+	1    5300 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J2
+U 1 1 5DC8F68B
+P 5950 3750
+F 0 "J2" H 5978 3726 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 5978 3635 50  0000 L CNN
+F 2 "" H 5950 3750 50  0001 C CNN
+F 3 "~" H 5950 3750 50  0001 C CNN
+	1    5950 3750
+	1    0    0    -1  
+$EndComp
+Text GLabel 3500 2450 2    50   Input ~ 0
+AC1
+NoConn ~ 7050 2500
+NoConn ~ 7050 2600
+NoConn ~ 7050 2700
+NoConn ~ 7050 2800
+Wire Wire Line
+	5350 3200 5450 3200
+Wire Wire Line
+	5350 3300 5500 3300
+Wire Wire Line
+	5300 3400 5550 3400
+Wire Wire Line
+	5400 3650 5400 3100
+Wire Wire Line
+	5300 3100 5400 3100
+Connection ~ 5400 3100
+Wire Wire Line
+	5400 3100 5750 3100
+Wire Wire Line
+	5450 3200 5450 3750
+Connection ~ 5450 3200
+Wire Wire Line
+	5450 3200 5750 3200
+Wire Wire Line
+	5400 3650 5750 3650
+Wire Wire Line
+	5450 3750 5750 3750
+Wire Wire Line
+	5500 3850 5500 3300
+Wire Wire Line
+	5500 3850 5750 3850
+Connection ~ 5500 3300
+Wire Wire Line
+	5500 3300 5750 3300
+Wire Wire Line
+	5550 3950 5550 3400
+Wire Wire Line
+	5550 3950 5750 3950
+Connection ~ 5550 3400
+Wire Wire Line
+	5550 3400 5750 3400
+$EndSCHEMATC

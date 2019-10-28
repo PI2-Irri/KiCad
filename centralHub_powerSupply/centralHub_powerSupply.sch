@@ -36,17 +36,6 @@ F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 5350 4650 50  0001 C CNN
 	1    5350 4650
 	0    1    1    0   
 $EndComp
-$Comp
-L Diode_Bridge:KBU4J D1
-U 1 1 5DB26680
-P 2700 4200
-F 0 "D1" H 3044 4246 50  0000 L CNN
-F 1 "KBU4J" H 3044 4155 50  0000 L CNN
-F 2 "Diode_THT:Diode_Bridge_Vishay_KBU" H 2850 4325 50  0001 L CNN
-F 3 "http://www.vishay.com/docs/88656/kbu4.pdf" H 2700 4200 50  0001 C CNN
-	1    2700 4200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5050 4400 5350 4400
 Wire Wire Line
@@ -151,19 +140,6 @@ F 3 "" H 4050 4400 50  0001 C CNN
 	1    4050 4400
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3000 4200 3400 4200
-$Comp
-L power:GND #PWR01
-U 1 1 5DB43228
-P 2400 4200
-F 0 "#PWR01" H 2400 3950 50  0001 C CNN
-F 1 "GND" V 2405 4072 50  0000 R CNN
-F 2 "" H 2400 4200 50  0001 C CNN
-F 3 "" H 2400 4200 50  0001 C CNN
-	1    2400 4200
-	0    1    1    0   
-$EndComp
 $Comp
 L Connector:Conn_01x02_Female J1
 U 1 1 5DB4464D
@@ -175,10 +151,6 @@ F 3 "~" H 2900 4950 50  0001 C CNN
 	1    2900 4950
 	1    0    0    -1  
 $EndComp
-Text Label 2700 4500 3    50   ~ 0
-AC_in1
-Text Label 2700 3900 1    50   ~ 0
-AC_in2
 Text Label 6000 4400 0    50   ~ 0
 V5_out
 Text Label 2900 4950 0    50   ~ 0
@@ -198,7 +170,6 @@ F 3 "" H 4050 5050 50  0001 C CNN
 $EndComp
 Text Label 4050 4950 0    50   ~ 0
 V5_out
-Connection ~ 3400 4200
 Wire Wire Line
 	3400 4200 4050 4200
 $Comp
@@ -211,5 +182,27 @@ F 2 "" H 4050 4950 50  0001 C CNN
 F 3 "~" H 4050 4950 50  0001 C CNN
 	1    4050 4950
 	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5408 D?
+U 1 1 5DB392AF
+P 4050 2700
+F 0 "D?" H 4050 2484 50  0000 C CNN
+F 1 "1N5408" H 4050 2575 50  0000 C CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 4050 2525 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 4050 2700 50  0001 C CNN
+	1    4050 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N5408 D?
+U 1 1 5DB3A012
+P 3850 2900
+F 0 "D?" V 3896 2821 50  0000 R CNN
+F 1 "1N5408" V 3805 2821 50  0000 R CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 3850 2725 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 3850 2900 50  0001 C CNN
+	1    3850 2900
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC

@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:centralHub_powerSupply-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -34,17 +35,6 @@ F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 5350 4475 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 5350 4650 50  0001 C CNN
 	1    5350 4650
 	0    1    1    0   
-$EndComp
-$Comp
-L Diode_Bridge:KBU4J D1
-U 1 1 5DB26680
-P 2700 4200
-F 0 "D1" H 3044 4246 50  0000 L CNN
-F 1 "KBU4J" H 3044 4155 50  0000 L CNN
-F 2 "Diode_THT:Diode_Bridge_Vishay_KBU" H 2850 4325 50  0001 L CNN
-F 3 "http://www.vishay.com/docs/88656/kbu4.pdf" H 2700 4200 50  0001 C CNN
-	1    2700 4200
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5050 4400 5350 4400
@@ -150,75 +140,47 @@ F 3 "" H 4050 4400 50  0001 C CNN
 	1    4050 4400
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3000 4200 3400 4200
-Wire Wire Line
-	3450 4200 4050 4200
-$Comp
-L power:GND #PWR01
-U 1 1 5DB43228
-P 2400 4200
-F 0 "#PWR01" H 2400 3950 50  0001 C CNN
-F 1 "GND" V 2405 4072 50  0000 R CNN
-F 2 "" H 2400 4200 50  0001 C CNN
-F 3 "" H 2400 4200 50  0001 C CNN
-	1    2400 4200
-	0    1    1    0   
-$EndComp
 $Comp
 L Connector:Conn_01x02_Female J1
 U 1 1 5DB4464D
-P 2650 5100
-F 0 "J1" H 2678 5076 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 2678 4985 50  0000 L CNN
-F 2 "" H 2650 5100 50  0001 C CNN
-F 3 "~" H 2650 5100 50  0001 C CNN
-	1    2650 5100
+P 2900 4950
+F 0 "J1" H 2750 4800 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 2450 4700 50  0000 L CNN
+F 2 "" H 2900 4950 50  0001 C CNN
+F 3 "~" H 2900 4950 50  0001 C CNN
+	1    2900 4950
 	1    0    0    -1  
 $EndComp
-Text Label 2700 4500 3    50   ~ 0
-AC_in1
-Text Label 2700 3900 1    50   ~ 0
-AC_in2
 Text Label 6000 4400 0    50   ~ 0
 V5_out
-Text Label 2900 5100 0    50   ~ 0
+Text Label 2900 4950 0    50   ~ 0
 AC_in1
-Wire Wire Line
-	2650 5100 2900 5100
-Text Label 2900 5200 0    50   ~ 0
+Text Label 2900 5050 0    50   ~ 0
 AC_in2
-Wire Wire Line
-	2650 5200 2900 5200
-$Comp
-L Connector:Conn_01x02_Female J2
-U 1 1 5DB4B280
-P 3750 5100
-F 0 "J2" H 3778 5076 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 3778 4985 50  0000 L CNN
-F 2 "" H 3750 5100 50  0001 C CNN
-F 3 "~" H 3750 5100 50  0001 C CNN
-	1    3750 5100
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR03
 U 1 1 5DB4BFFB
-P 4000 5200
-F 0 "#PWR03" H 4000 4950 50  0001 C CNN
-F 1 "GND" V 4005 5072 50  0000 R CNN
-F 2 "" H 4000 5200 50  0001 C CNN
-F 3 "" H 4000 5200 50  0001 C CNN
-	1    4000 5200
+P 4050 5050
+F 0 "#PWR03" H 4050 4800 50  0001 C CNN
+F 1 "GND" V 4055 4922 50  0000 R CNN
+F 2 "" H 4050 5050 50  0001 C CNN
+F 3 "" H 4050 5050 50  0001 C CNN
+	1    4050 5050
 	0    -1   -1   0   
 $EndComp
-Text Label 4000 5100 0    50   ~ 0
+Text Label 4050 4950 0    50   ~ 0
 V5_out
 Wire Wire Line
-	3750 5100 4000 5100
-Wire Wire Line
-	3750 5200 4000 5200
-Connection ~ 3400 4200
-Wire Wire Line
-	3400 4200 3450 4200
+	3400 4200 4050 4200
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5DB38900
+P 4050 4950
+F 0 "J?" H 3900 4800 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 3600 4700 50  0000 L CNN
+F 2 "" H 4050 4950 50  0001 C CNN
+F 3 "~" H 4050 4950 50  0001 C CNN
+	1    4050 4950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
