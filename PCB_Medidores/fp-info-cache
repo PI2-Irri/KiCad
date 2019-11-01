@@ -1,4 +1,4 @@
-16305643364971707
+16308790188337707
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -51398,10 +51398,24 @@ BatteryHolder
 
 
 0
-2
-2
+0
+0
+PI2_footprint
+GOOUUU-ESP32
+
+
+0
+38
+38
 PI2_footprint
 Module_relay
+
+
+0
+0
+0
+PI2_footprint
+Trafo_1A_6V
 
 
 0

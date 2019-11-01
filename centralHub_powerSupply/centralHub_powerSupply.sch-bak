@@ -15,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Diode:1N5408 D?
+L Diode:1N5408 D1
 U 1 1 5DBA7EBF
 P 3700 2300
-F 0 "D?" V 3654 2379 50  0000 L CNN
+F 0 "D1" V 3654 2379 50  0000 L CNN
 F 1 "1N5408" V 3745 2379 50  0000 L CNN
 F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 3700 2125 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 3700 2300 50  0001 C CNN
@@ -26,10 +26,10 @@ F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 3700 2300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Diode:1N5408 D?
+L Diode:1N5408 D2
 U 1 1 5DBAB891
 P 4000 2100
-F 0 "D?" H 4000 1884 50  0000 C CNN
+F 0 "D2" H 4000 1884 50  0000 C CNN
 F 1 "1N5408" H 4000 1975 50  0000 C CNN
 F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 4000 1925 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 4000 2100 50  0001 C CNN
@@ -37,10 +37,10 @@ F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 4000 2100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Diode:1N5408 D?
+L Diode:1N5408 D4
 U 1 1 5DBAC3E6
 P 4300 2300
-F 0 "D?" V 4254 2379 50  0000 L CNN
+F 0 "D4" V 4254 2379 50  0000 L CNN
 F 1 "1N5408" V 4345 2379 50  0000 L CNN
 F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 4300 2125 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 4300 2300 50  0001 C CNN
@@ -48,10 +48,10 @@ F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 4300 2300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Diode:1N5408 D?
+L Diode:1N5408 D3
 U 1 1 5DBAD793
 P 4000 2550
-F 0 "D?" H 4000 2334 50  0000 C CNN
+F 0 "D3" H 4000 2334 50  0000 C CNN
 F 1 "1N5408" H 4000 2425 50  0000 C CNN
 F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 4000 2375 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 4000 2550 50  0001 C CNN
@@ -87,10 +87,10 @@ Wire Wire Line
 	4300 2650 4300 2550
 Connection ~ 4300 2550
 $Comp
-L power:GND #PWR07
+L power:GND #PWR04
 U 1 1 5DB3CABA
 P 7950 2750
-F 0 "#PWR07" H 7950 2500 50  0001 C CNN
+F 0 "#PWR04" H 7950 2500 50  0001 C CNN
 F 1 "GND" H 7955 2577 50  0000 C CNN
 F 2 "" H 7950 2750 50  0001 C CNN
 F 3 "" H 7950 2750 50  0001 C CNN
@@ -140,26 +140,15 @@ F 3 "~" H 7650 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N5822 D2
+L Diode:1N5822 D5
 U 1 1 5DB255E3
 P 7000 2500
-F 0 "D2" V 6954 2579 50  0000 L CNN
+F 0 "D5" V 6954 2579 50  0000 L CNN
 F 1 "1N5822" V 7045 2579 50  0000 L CNN
 F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 7000 2325 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 7000 2500 50  0001 C CNN
 	1    7000 2500
 	0    1    1    0   
-$EndComp
-$Comp
-L Regulator_Switching:LM2576HVS-5 U1
-U 1 1 5DB23AFA
-P 6200 2200
-F 0 "U1" H 6200 2567 50  0000 C CNN
-F 1 "LM2576HVS-5" H 6200 2476 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 6200 1950 50  0001 L CIN
-F 3 "http://www.ti.com/lit/ds/symlink/lm2576.pdf" H 6200 2200 50  0001 C CNN
-	1    6200 2200
-	1    0    0    -1  
 $EndComp
 Connection ~ 4300 2100
 Wire Wire Line
@@ -204,10 +193,10 @@ Wire Wire Line
 	7650 2750 7950 2750
 Connection ~ 7650 2750
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR03
 U 1 1 5DBE89AA
 P 7900 2100
-F 0 "#PWR?" H 7900 1950 50  0001 C CNN
+F 0 "#PWR03" H 7900 1950 50  0001 C CNN
 F 1 "+5V" V 7915 2228 50  0000 L CNN
 F 2 "" H 7900 2100 50  0001 C CNN
 F 3 "" H 7900 2100 50  0001 C CNN
@@ -223,10 +212,10 @@ Connection ~ 6200 2750
 Wire Wire Line
 	6200 2750 7000 2750
 $Comp
-L Connector:Screw_Terminal_01x02 J?
+L Connector:Screw_Terminal_01x02 J1
 U 1 1 5DBF6AEF
 P 5100 3150
-F 0 "J?" H 5180 3142 50  0000 L CNN
+F 0 "J1" H 5180 3142 50  0000 L CNN
 F 1 "Screw_Terminal_01x02" H 5180 3051 50  0000 L CNN
 F 2 "" H 5100 3150 50  0001 C CNN
 F 3 "~" H 5100 3150 50  0001 C CNN
@@ -242,10 +231,10 @@ AC1
 Wire Wire Line
 	4800 3150 4900 3150
 $Comp
-L Connector:Screw_Terminal_01x02 J?
+L Connector:Screw_Terminal_01x02 J2
 U 1 1 5DC06109
 P 7200 3200
-F 0 "J?" H 7280 3192 50  0000 L CNN
+F 0 "J2" H 7280 3192 50  0000 L CNN
 F 1 "Screw_Terminal_01x02" H 7280 3101 50  0000 L CNN
 F 2 "" H 7200 3200 50  0001 C CNN
 F 3 "~" H 7200 3200 50  0001 C CNN
@@ -253,10 +242,10 @@ F 3 "~" H 7200 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR01
 U 1 1 5DC06DB4
 P 6850 3200
-F 0 "#PWR?" H 6850 3050 50  0001 C CNN
+F 0 "#PWR01" H 6850 3050 50  0001 C CNN
 F 1 "+5V" H 6865 3373 50  0000 C CNN
 F 2 "" H 6850 3200 50  0001 C CNN
 F 3 "" H 6850 3200 50  0001 C CNN
@@ -266,10 +255,10 @@ $EndComp
 Wire Wire Line
 	6850 3200 7000 3200
 $Comp
-L power:GND #PWR?
+L power:GND #PWR02
 U 1 1 5DC07D1E
 P 6850 3300
-F 0 "#PWR?" H 6850 3050 50  0001 C CNN
+F 0 "#PWR02" H 6850 3050 50  0001 C CNN
 F 1 "GND" H 6855 3127 50  0000 C CNN
 F 2 "" H 6850 3300 50  0001 C CNN
 F 3 "" H 6850 3300 50  0001 C CNN
@@ -278,4 +267,15 @@ F 3 "" H 6850 3300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6850 3300 7000 3300
+$Comp
+L Regulator_Switching:LM2576HVT-5 U?
+U 1 1 5DC1A549
+P 6200 2200
+F 0 "U?" H 6200 2567 50  0000 C CNN
+F 1 "LM2576HVT-5" H 6200 2476 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-5_Vertical" H 6200 1950 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2576.pdf" H 6200 2200 50  0001 C CNN
+	1    6200 2200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
