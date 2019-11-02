@@ -1,4 +1,4 @@
-16308790356048707
+16300927459502412
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -51390,41 +51390,6 @@ Oscillator
 Oscillator_SeikoEpson_SG-8002DC
 8-lead dip package, row spacing 7.62 mm (300 mils)
 DIL DIP PDIP 2.54mm 7.62mm 300mil
-0
-4
-4
-PI2_footprint
-BatteryHolder
-
-
-0
-0
-0
-PI2_footprint
-GOOUUU-ESP32
-
-
-0
-38
-38
-PI2_footprint
-Module_relay
-
-
-0
-0
-0
-PI2_footprint
-Trafo_1A_6V
-
-
-0
-0
-0
-PI2_footprint
-tp4056
-
-
 0
 4
 4

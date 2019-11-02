@@ -15,14 +15,324 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L PI2_Library:GOOUUU-ESP32 U?
-U 1 1 5DB99548
-P 4450 3300
-F 0 "U?" H 4450 3425 50  0000 C CNN
-F 1 "GOOUUU-ESP32" H 4450 3334 50  0000 C CNN
-F 2 "PI2_footprint:GOOUUU-ESP32" H 4450 3300 50  0001 C CNN
-F 3 "" H 4450 3300 50  0001 C CNN
-	1    4450 3300
+L PI2_Library:GOOUUU-ESP32 U1
+U 1 1 5DBCD4E3
+P 3600 3100
+F 0 "U1" H 3600 3225 50  0000 C CNN
+F 1 "GOOUUU-ESP32" H 3600 3134 50  0000 C CNN
+F 2 "PI2_footprint:GOOUUU-ESP32" H 3600 3100 50  0001 C CNN
+F 3 "" H 3600 3100 50  0001 C CNN
+	1    3600 3100
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5DBCEBFB
+P 4000 3200
+F 0 "#PWR04" H 4000 2950 50  0001 C CNN
+F 1 "GND" V 4005 3072 50  0000 R CNN
+F 2 "" H 4000 3200 50  0001 C CNN
+F 3 "" H 4000 3200 50  0001 C CNN
+	1    4000 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5DBCF293
+P 4000 3800
+F 0 "#PWR05" H 4000 3550 50  0001 C CNN
+F 1 "GND" V 4005 3672 50  0000 R CNN
+F 2 "" H 4000 3800 50  0001 C CNN
+F 3 "" H 4000 3800 50  0001 C CNN
+	1    4000 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5DBCF5C0
+P 3200 4500
+F 0 "#PWR03" H 3200 4250 50  0001 C CNN
+F 1 "GND" V 3205 4372 50  0000 R CNN
+F 2 "" H 3200 4500 50  0001 C CNN
+F 3 "" H 3200 4500 50  0001 C CNN
+	1    3200 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR02
+U 1 1 5DBD03A2
+P 3050 4900
+F 0 "#PWR02" H 3050 4750 50  0001 C CNN
+F 1 "+5V" H 3065 5073 50  0000 C CNN
+F 2 "" H 3050 4900 50  0001 C CNN
+F 3 "" H 3050 4900 50  0001 C CNN
+	1    3050 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 4900 3050 5000
+Wire Wire Line
+	3050 5000 3200 5000
+Text GLabel 4400 3700 2    50   Input ~ 0
+SDA
+Wire Wire Line
+	4400 3700 4000 3700
+Text GLabel 4400 3400 2    50   Input ~ 0
+SCL
+Wire Wire Line
+	4400 3400 4000 3400
+Text GLabel 4150 3300 2    50   Input ~ 0
+MOSI
+Wire Wire Line
+	4150 3300 4000 3300
+Text GLabel 4150 3900 2    50   Input ~ 0
+MISO
+Wire Wire Line
+	4150 3900 4000 3900
+Text GLabel 4150 4000 2    50   Input ~ 0
+SCK
+Wire Wire Line
+	4150 4000 4000 4000
+Text GLabel 4150 4100 2    50   Input ~ 0
+CS
+Wire Wire Line
+	4150 4100 4000 4100
+$Comp
+L power:+3.3V #PWR01
+U 1 1 5DBD295E
+P 3050 3100
+F 0 "#PWR01" H 3050 2950 50  0001 C CNN
+F 1 "+3.3V" H 3065 3273 50  0000 C CNN
+F 2 "" H 3050 3100 50  0001 C CNN
+F 3 "" H 3050 3100 50  0001 C CNN
+	1    3050 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 3100 3050 3200
+Wire Wire Line
+	3050 3200 3200 3200
+Text GLabel 2850 4600 0    50   Input ~ 0
+CE
+Wire Wire Line
+	2850 4600 3200 4600
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J2
+U 1 1 5DBD6245
+P 5550 3500
+F 0 "J2" H 5600 3917 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 5600 3826 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" H 5550 3500 50  0001 C CNN
+F 3 "~" H 5550 3500 50  0001 C CNN
+	1    5550 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 3300 5850 3300
+$Comp
+L power:GND #PWR09
+U 1 1 5DBD8B4F
+P 5350 3300
+F 0 "#PWR09" H 5350 3050 50  0001 C CNN
+F 1 "GND" V 5355 3172 50  0000 R CNN
+F 2 "" H 5350 3300 50  0001 C CNN
+F 3 "" H 5350 3300 50  0001 C CNN
+	1    5350 3300
+	0    1    1    0   
+$EndComp
+Text GLabel 5200 3400 0    50   Input ~ 0
+CE
+Wire Wire Line
+	5200 3400 5350 3400
+Text GLabel 6150 3400 2    50   Input ~ 0
+CS
+Wire Wire Line
+	6150 3400 5850 3400
+Text GLabel 6150 3500 2    50   Input ~ 0
+MOSI
+Wire Wire Line
+	6150 3500 5850 3500
+Text GLabel 5200 3500 0    50   Input ~ 0
+SCK
+Wire Wire Line
+	5200 3500 5350 3500
+Text GLabel 5200 3600 0    50   Input ~ 0
+MISO
+Wire Wire Line
+	5200 3600 5350 3600
+Text GLabel 6150 3600 2    50   Input ~ 0
+IRQ
+Wire Wire Line
+	6150 3600 5850 3600
+Text GLabel 5200 3700 0    50   Input ~ 0
+SDA
+Wire Wire Line
+	5200 3700 5350 3700
+Text GLabel 6150 3700 2    50   Input ~ 0
+SCL
+Wire Wire Line
+	6150 3700 5850 3700
+$Comp
+L Connector:Screw_Terminal_01x03 J3
+U 1 1 5DBDC347
+P 5550 4450
+F 0 "J3" H 5630 4492 50  0000 L CNN
+F 1 "Screw_Terminal_01x03" H 5630 4401 50  0000 L CNN
+F 2 "TerminalBlock_Philmore:TerminalBlock_Philmore_TB133_1x03_P5.00mm_Horizontal" H 5550 4450 50  0001 C CNN
+F 3 "~" H 5550 4450 50  0001 C CNN
+	1    5550 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J4
+U 1 1 5DBDD822
+P 6450 5250
+F 0 "J4" H 6530 5292 50  0000 L CNN
+F 1 "Screw_Terminal_01x03" H 6530 5201 50  0000 L CNN
+F 2 "TerminalBlock_Philmore:TerminalBlock_Philmore_TB133_1x03_P5.00mm_Horizontal" H 6450 5250 50  0001 C CNN
+F 3 "~" H 6450 5250 50  0001 C CNN
+	1    6450 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR08
+U 1 1 5DBDDF1F
+P 5200 4200
+F 0 "#PWR08" H 5200 4050 50  0001 C CNN
+F 1 "+5V" H 5215 4373 50  0000 C CNN
+F 2 "" H 5200 4200 50  0001 C CNN
+F 3 "" H 5200 4200 50  0001 C CNN
+	1    5200 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5DBDF04E
+P 5350 4550
+F 0 "#PWR010" H 5350 4300 50  0001 C CNN
+F 1 "GND" V 5355 4422 50  0000 R CNN
+F 2 "" H 5350 4550 50  0001 C CNN
+F 3 "" H 5350 4550 50  0001 C CNN
+	1    5350 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR011
+U 1 1 5DBDFA9E
+P 6150 5050
+F 0 "#PWR011" H 6150 4900 50  0001 C CNN
+F 1 "+5V" H 6165 5223 50  0000 C CNN
+F 2 "" H 6150 5050 50  0001 C CNN
+F 3 "" H 6150 5050 50  0001 C CNN
+	1    6150 5050
+	1    0    0    -1  
+$EndComp
+Text GLabel 5200 4450 0    50   Input ~ 0
+FLOW
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 5DBF0E08
+P 5050 5200
+F 0 "J1" H 5130 5192 50  0000 L CNN
+F 1 "Conn_01x04" H 5130 5101 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5050 5200 50  0001 C CNN
+F 3 "~" H 5050 5200 50  0001 C CNN
+	1    5050 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR06
+U 1 1 5DBF1ACD
+P 4700 5050
+F 0 "#PWR06" H 4700 4900 50  0001 C CNN
+F 1 "+5V" H 4715 5223 50  0000 C CNN
+F 2 "" H 4700 5050 50  0001 C CNN
+F 3 "" H 4700 5050 50  0001 C CNN
+	1    4700 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5DBF26F9
+P 4850 5400
+F 0 "#PWR07" H 4850 5150 50  0001 C CNN
+F 1 "GND" V 4855 5272 50  0000 R CNN
+F 2 "" H 4850 5400 50  0001 C CNN
+F 3 "" H 4850 5400 50  0001 C CNN
+	1    4850 5400
+	0    1    1    0   
+$EndComp
+Text GLabel 6250 5350 0    50   Input ~ 0
+LEVEL1
+Text GLabel 6250 5250 0    50   Input ~ 0
+LEVEL2
+Text GLabel 4600 5200 0    50   Input ~ 0
+RELAY1
+Text GLabel 4600 5300 0    50   Input ~ 0
+RELAY2
+Wire Wire Line
+	4600 5300 4850 5300
+Text GLabel 4150 4400 2    50   Input ~ 0
+LEVEL1
+Text GLabel 4150 4600 2    50   Input ~ 0
+LEVEL2
+Wire Wire Line
+	4150 4600 4000 4600
+Wire Wire Line
+	4150 4400 4000 4400
+Wire Wire Line
+	4850 5200 4600 5200
+Text GLabel 3050 4400 0    50   Input ~ 0
+FLOW
+Text GLabel 3050 4100 0    50   Input ~ 0
+RELAY1
+Wire Wire Line
+	3050 4100 3200 4100
+Text GLabel 3050 4000 0    50   Input ~ 0
+RELAY2
+Wire Wire Line
+	3050 4000 3200 4000
+Wire Wire Line
+	3050 4400 3200 4400
+Text GLabel 4150 4200 2    50   Input ~ 0
+IRQ
+Wire Wire Line
+	4150 4200 4000 4200
+NoConn ~ 3200 3600
+NoConn ~ 3200 3700
+NoConn ~ 3200 3800
+NoConn ~ 3200 3900
+NoConn ~ 3200 4200
+NoConn ~ 3200 4300
+NoConn ~ 4000 4700
+NoConn ~ 4000 4500
+NoConn ~ 4000 4300
+NoConn ~ 3200 3300
+$Comp
+L power:+3.3V #PWR012
+U 1 1 5DBD630C
+P 6100 3150
+F 0 "#PWR012" H 6100 3000 50  0001 C CNN
+F 1 "+3.3V" H 6115 3323 50  0000 C CNN
+F 2 "" H 6100 3150 50  0001 C CNN
+F 3 "" H 6100 3150 50  0001 C CNN
+	1    6100 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 3150 6100 3300
+Wire Wire Line
+	4700 5050 4700 5100
+Wire Wire Line
+	4700 5100 4850 5100
+Wire Wire Line
+	5200 4450 5350 4450
+Wire Wire Line
+	5200 4200 5200 4350
+Wire Wire Line
+	5200 4350 5350 4350
+Wire Wire Line
+	6150 5050 6150 5150
+Wire Wire Line
+	6150 5150 6250 5150
 $EndSCHEMATC
