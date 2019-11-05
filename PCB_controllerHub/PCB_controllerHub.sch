@@ -58,22 +58,11 @@ F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 4350 1150 50  0001 C CNN
 	1    4350 1150
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:Transformer_1P_SS T1
-U 1 1 5DB43B8F
-P 2650 2650
-F 0 "T1" H 2650 3031 50  0000 C CNN
-F 1 "Transformer_1P_SS" H 2650 2940 50  0000 C CNN
-F 2 "PI2_footprint:Trafo_1A_6V" H 2650 2650 50  0001 C CNN
-F 3 "~" H 2650 2650 50  0001 C CNN
-	1    2650 2650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4550 1550 4550 1700
 Wire Wire Line
 	4550 1700 4500 1700
-NoConn ~ 3050 2650
+NoConn ~ 5200 2600
 Wire Wire Line
 	4150 1700 4200 1700
 Wire Wire Line
@@ -87,32 +76,16 @@ Wire Wire Line
 Wire Wire Line
 	4150 1150 4200 1150
 Connection ~ 4150 1150
-NoConn ~ 2250 2450
-NoConn ~ 2250 2850
-Wire Wire Line
-	3050 2450 3150 2450
-Wire Wire Line
-	3150 2450 3150 2600
-Wire Wire Line
-	3150 2600 3200 2600
-Wire Wire Line
-	3050 2850 3150 2850
-Wire Wire Line
-	3150 2850 3150 2700
-Text GLabel 3500 2850 2    50   Input ~ 0
+NoConn ~ 4400 2400
+NoConn ~ 4400 2800
+Text GLabel 5650 2800 2    50   Input ~ 0
 AC2
 Wire Wire Line
-	3200 2600 3200 2450
+	5350 2400 5650 2400
 Wire Wire Line
-	3200 2450 3500 2450
-Connection ~ 3200 2600
+	5650 2800 5350 2800
 Wire Wire Line
-	3150 2700 3200 2700
-Wire Wire Line
-	3500 2850 3200 2850
-Wire Wire Line
-	3200 2850 3200 2700
-Connection ~ 3200 2700
+	5350 2800 5350 2650
 Text GLabel 3800 1800 0    50   Input ~ 0
 AC1
 Text GLabel 3800 1150 0    50   Input ~ 0
@@ -131,12 +104,12 @@ $EndComp
 $Comp
 L Device:R_Small R1
 U 1 1 5DB96D2D
-P 5600 1550
-F 0 "R1" H 5659 1596 50  0000 L CNN
-F 1 "270" H 5659 1505 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" H 5600 1550 50  0001 C CNN
-F 3 "~" H 5600 1550 50  0001 C CNN
-	1    5600 1550
+P 5600 1700
+F 0 "R1" H 5659 1746 50  0000 L CNN
+F 1 "270" H 5659 1655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" H 5600 1700 50  0001 C CNN
+F 3 "~" H 5600 1700 50  0001 C CNN
+	1    5600 1700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -162,8 +135,6 @@ F 3 "~" H 5600 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5600 1400 5600 1450
-Wire Wire Line
 	5600 1150 5600 1200
 Wire Wire Line
 	5600 1150 6000 1150
@@ -180,9 +151,7 @@ F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=p
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	5800 1850 5600 1850
-Wire Wire Line
-	6000 1550 6000 1450
+	6000 1550 6000 1500
 $Comp
 L Device:R_Small R2
 U 1 1 5DBBA193
@@ -249,34 +218,20 @@ F 3 "" H 7550 1850 50  0001 C CNN
 $EndComp
 Connection ~ 6900 1850
 $Comp
-L PI2_Library:Module_Relay U1
-U 1 1 5DBC8D34
-P 7300 2250
-F 0 "U1" H 7478 1896 50  0000 L CNN
-F 1 "Module_Relay" H 7478 1805 50  0000 L CNN
-F 2 "PI2_footprint:Module_relay" H 7300 2250 50  0001 C CNN
-F 3 "" H 7300 2250 50  0001 C CNN
-	1    7300 2250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 5DBF98DD
-P 3550 2600
-F 0 "J1" H 3630 2592 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 3630 2501 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3550 2600 50  0001 C CNN
-F 3 "~" H 3550 2600 50  0001 C CNN
-	1    3550 2600
+P 5700 2550
+F 0 "J1" H 5780 2542 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 5780 2451 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5700 2550 50  0001 C CNN
+F 3 "~" H 5700 2550 50  0001 C CNN
+	1    5700 2550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3200 2600 3350 2600
-Wire Wire Line
-	3200 2700 3350 2700
-Text GLabel 3500 2450 2    50   Input ~ 0
+	5350 2650 5500 2650
+Text GLabel 5650 2400 2    50   Input ~ 0
 AC1
-NoConn ~ 7050 2500
 NoConn ~ 7050 2600
 NoConn ~ 7050 2700
 NoConn ~ 7050 2800
@@ -314,9 +269,6 @@ Connection ~ 4550 1150
 Wire Wire Line
 	4550 1700 4550 1800
 Wire Wire Line
-	5600 1650 5600 1850
-Connection ~ 5600 1850
-Wire Wire Line
 	3800 1150 4150 1150
 Wire Wire Line
 	3800 1800 4550 1800
@@ -335,6 +287,50 @@ Wire Wire Line
 Wire Wire Line
 	5050 1650 5050 1850
 Connection ~ 5050 1850
+NoConn ~ 7050 2500
+$Comp
+L PI2_Library:Module_Relay U1
+U 1 1 5DBC8D34
+P 7300 2250
+F 0 "U1" H 7478 1896 50  0000 L CNN
+F 1 "Module_Relay" H 7478 1805 50  0000 L CNN
+F 2 "PI2_footprint:Module_relay" H 7300 2250 50  0001 C CNN
+F 3 "" H 7300 2250 50  0001 C CNN
+	1    7300 2250
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	5050 1850 5600 1850
+Wire Wire Line
+	5600 1400 5600 1500
+Wire Wire Line
+	5600 1800 5600 1850
+Connection ~ 5600 1850
+Wire Wire Line
+	5600 1850 5800 1850
+Wire Wire Line
+	5600 1500 6000 1500
+Connection ~ 5600 1500
+Wire Wire Line
+	5600 1500 5600 1600
+Connection ~ 6000 1500
+Wire Wire Line
+	6000 1500 6000 1450
+$Comp
+L Device:Transformer_1P_SS T1
+U 1 1 5DB43B8F
+P 4800 2600
+F 0 "T1" H 4800 2981 50  0000 C CNN
+F 1 "Transformer_1P_SS" H 4800 2890 50  0000 C CNN
+F 2 "PI2_footprint:Trafo_1A_6V" H 4800 2600 50  0001 C CNN
+F 3 "~" H 4800 2600 50  0001 C CNN
+	1    4800 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2550 5500 2550
+Wire Wire Line
+	5350 2550 5350 2400
+NoConn ~ 5200 2800
+NoConn ~ 5200 2400
 $EndSCHEMATC
