@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name pcbMedidores_V2.0-rescue)(type Legacy)(uri ${KIPRJMOD}/pcbMedidores_V2.0-rescue.lib)(options "")(descr ""))
+  (lib (name PI2_Library)(type Legacy)(uri /home/arthur/FGA/PI2/KiCad/Libs/PI2_Library.lib)(options "")(descr ""))
+)

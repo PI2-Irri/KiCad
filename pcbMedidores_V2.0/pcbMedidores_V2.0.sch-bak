@@ -73,7 +73,7 @@ U 1 1 5DBA437B
 P 7700 2950
 F 0 "R3" H 7759 2996 50  0000 L CNN
 F 1 "100" H 7759 2905 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" H 7700 2950 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 7700 2950 50  0001 C CNN
 F 3 "~" H 7700 2950 50  0001 C CNN
 	1    7700 2950
 	1    0    0    -1  
@@ -156,10 +156,6 @@ Wire Wire Line
 	2850 1750 3250 1750
 Text Label 3250 1750 2    50   ~ 0
 SCK
-Text Label 2950 1850 2    50   ~ 0
-NC
-Text Label 2950 1950 2    50   ~ 0
-NC
 Wire Wire Line
 	2850 2650 3250 2650
 Text Label 3250 2650 2    50   ~ 0
@@ -329,48 +325,30 @@ NoConn ~ 3000 1850
 Wire Wire Line
 	2850 1950 3000 1950
 NoConn ~ 3000 1950
-Text Label 2950 2150 2    50   ~ 0
-NC
 Wire Wire Line
 	2850 2150 3000 2150
 NoConn ~ 3000 2150
-Text Label 2950 2350 2    50   ~ 0
-NC
 Wire Wire Line
 	2850 2350 3000 2350
 NoConn ~ 3000 2350
-Text Label 2950 2550 2    50   ~ 0
-NC
 Wire Wire Line
 	2850 2550 3000 2550
 NoConn ~ 3000 2550
-Text Label 2950 3350 2    50   ~ 0
-NC
 Wire Wire Line
 	2850 3350 3000 3350
 NoConn ~ 3000 3350
-Text Label 2950 3450 2    50   ~ 0
-NC
 Wire Wire Line
 	2850 3450 3000 3450
 NoConn ~ 3000 3450
-Text Label 2950 3550 2    50   ~ 0
-NC
 Wire Wire Line
 	2850 3550 3000 3550
 NoConn ~ 3000 3550
-Text Label 2950 3150 2    50   ~ 0
-NC
 Wire Wire Line
 	2850 3150 3000 3150
 NoConn ~ 3000 3150
-Text Label 2950 3250 2    50   ~ 0
-NC
 Wire Wire Line
 	2850 3250 3000 3250
 NoConn ~ 3000 3250
-Text Label 1550 1250 0    50   ~ 0
-NC
 Wire Wire Line
 	1650 1250 1500 1250
 NoConn ~ 1500 1250
@@ -678,10 +656,10 @@ F 3 "" H 6800 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R4
 U 1 1 5E0B8E84
 P 9250 5850
-F 0 "R?" H 9309 5896 50  0000 L CNN
+F 0 "R4" H 9309 5896 50  0000 L CNN
 F 1 "10k" H 9309 5805 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 9250 5850 50  0001 C CNN
 F 3 "~" H 9250 5850 50  0001 C CNN
